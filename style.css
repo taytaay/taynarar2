@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --bg-color: #E5E5F7; /* Lavanda suave */
+    --primary-color: #5D3FD3; /* Roxo claro */
+    --secondary-color: #82C9C6; /* Turquesa suave */
+    --accent-color: #F6A5C0; /* Rosa suave */
+    --highlight-color: #D9A1FF; /* Lilás para detalhes */
+    --font: "Nunito Sans", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: var(--bg-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 0 2rem;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--highlight-color);
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.graficos-container {
+    margin: 4rem 2rem;
+}
+
+.grafico {
+    margin-top: 3rem;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.graficos-container__texto {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+span {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    box-shadow: 0px -6px 12px rgba(0, 0, 0, 0.2);
+}
